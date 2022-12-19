@@ -27,17 +27,17 @@ public class DemoPruebaController {
 
   */
 
-    @GetMapping//("/{id}") //carga el id en la url
+ /*   @GetMapping//("/{id}") //carga el id en la url
     @ResponseBody
-    public ResponseEntity<DemoPruebaResponse> calcular(@RequestBody DemoPruebaRequest pdr) {
-        return ResponseEntity.ok(demoPruebaService.calculatedResult(pdr));
-    }
+    public ResponseEntity<DemoPruebaResponse> calcular(@RequestBody DemoPruebaRequest id) {
+        return ResponseEntity.ok(demoPruebaService.calculatedResult(id));
+    }*/
 
 
     @PostMapping //no puedo enviar nada en la url
     @ResponseBody
-    public ResponseEntity<DemoPruebaResponse> calcular3(@RequestBody DemoPruebaRequest pdr) {
-        return ResponseEntity.ok(demoPruebaService.calculatedResult(pdr));
+    public ResponseEntity<DemoPruebaResponse> calculatedResult(@RequestBody DemoPruebaRequest id) {
+        return ResponseEntity.ok(demoPruebaService.calculatedResult(id));
     }
 
 }

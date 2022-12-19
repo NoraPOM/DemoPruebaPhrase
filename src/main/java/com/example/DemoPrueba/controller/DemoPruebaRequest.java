@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 
 public class DemoPruebaRequest {
-    private List<String> id;
+    private String id;
 }

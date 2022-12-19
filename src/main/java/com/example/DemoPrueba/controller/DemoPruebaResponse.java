@@ -8,5 +8,7 @@ import java.util.List;
 @Data
 
 public class DemoPruebaResponse {
-    private List<String> result;
+    private Integer resultCon;
+    private Integer resultVow;
+    private String resultPhrase;
 }
